@@ -10,5 +10,16 @@ export const routes: Routes = [
     {
         path:"temp2",
         component:View2
+    },
+    {
+        path: "",
+        redirectTo: "temp1",
+        pathMatch: "full"
+    }
+    ,
+    {
+        path: "**",
+        redirectTo: "temp1",
+        pathMatch: "full"
     }
 ];
